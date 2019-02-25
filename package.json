@@ -1,4 +1,5 @@
 {
+  "homepage": "https://msestellemarie.github.io/",
   "name": "estelle-corey",
   "version": "0.1.0",
   "private": true,
@@ -7,6 +8,7 @@
     "react-dom": "^16.8.2",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5",
+    "react-scroll": "^1.7.11",
     "styled-components": "^4.1.3",
     "styled-icons": "^7.2.0"
   },
@@ -14,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -24,5 +27,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
